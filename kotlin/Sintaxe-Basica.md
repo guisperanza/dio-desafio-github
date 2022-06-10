@@ -13,13 +13,13 @@
 - **null!** ->
 
 ## Declaração de Variável
-- **var** -> Valor mutável, CamelCase. Essa variável pode ter o seu valor alterado durante o código.
+- **var** -> Variável LOCAL, Valor mutável, CamelCase. Essa variável pode ter o seu valor alterado durante o código.
 > Exemplo de declaração: **var currentAge = 22**
 
-- **val** -> Valor imutável, CamelCase. Essa variável terá somente o valor que já foi atribuido, similar ao *final* em Java.
+- **val** -> Variável LOCAL, Valor imutável, CamelCase. Essa variável terá somente o valor que já foi atribuido, similar ao *final* em Java.
 > Exemplo de declaração: **val currentAge = 22**
 
-- **conts val** -> Valor imutável, SNAKE_CASE. Constante cujo o valor é atribuído durante a compilação.
+- **conts val** -> Variável GLOBAL, Valor imutável, SNAKE_CASE. Constante cujo o valor é atribuído durante a compilação.
 > Exemplo de declaração: **const val MIN_AGE = 22**
 
 
