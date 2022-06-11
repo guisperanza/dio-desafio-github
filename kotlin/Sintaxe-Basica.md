@@ -53,3 +53,18 @@
 2. O operador **+** também serve para concatenar String;
 3. Na **Atribuição**, o valor de A passa a receber o resultado da operação.
 
+## Operados Comparativos
+- **>** ou **a.compareTo(b)>0** : maior que
+
+- **<** ou **a.compareTo(b)<0** : mmenor que
+
+- **>=** ou **a.compareTo(b)>=0** : maior ou igual que
+
+- **<>=** ou **a.compareTo(b)=<0** : menor ou igual que
+
+- **==** ou **a.equals(b)** : igual a
+
+- **!=** ou **!(a.equals(b))** : diferente que
+
+1. Os comandos **compareTo** retornam os valores **-1 (menor que), 0 (igual), ou 1 (maior que)**. Já os **operadores** retornam **valores booleanos**;
+2. O comando **equals** retorna **valores booleanos**.
