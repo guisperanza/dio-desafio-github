@@ -54,13 +54,13 @@
 3. Na **Atribuição**, o valor de A passa a receber o resultado da operação.
 
 ## Operados Comparativos
-- **>** ou **a.compareTo(b)>0** : maior que
+- **>** ou **a.compareTo(b)** : maior que
 
-- **<** ou **a.compareTo(b)<0** : mmenor que
+- **<** ou **a.compareTo(b)** : mmenor que
 
-- **>=** ou **a.compareTo(b)>=0** : maior ou igual que
+- **>=** ou **a.compareTo(b)** : maior ou igual que
 
-- **<>=** ou **a.compareTo(b)=<0** : menor ou igual que
+- **<>=** ou **a.compareTo(b)** : menor ou igual que
 
 - **==** ou **a.equals(b)** : igual a
 
