@@ -22,7 +22,9 @@
 - **conts val** -> Variável GLOBAL, Valor imutável, SNAKE_CASE. Constante cujo o valor é atribuído durante a compilação.
 > Exemplo de declaração: **const val MIN_AGE = 22**
 
-### Uma variável **não pode** ser declarada **sem tipo ou sem atribuição**.
+1. ### Uma variável **não pode** ser declarada **sem tipo ou sem atribuição**;
+2. ### Uma **variável com inferência de tipo** só recerá **valores do mesmo tipo que a sua primeira atribuição**; 
+3. ### Utilizamos o comando *.toString()* para alterar o tipo de dado para uma string, sendo que podemos alterar a palavra String para os outros tipos de que temos e assim fazemos as alterações para esses outros tipos de dados. 
 
 ## Operados Aritméticos Básicos
 - **+**
