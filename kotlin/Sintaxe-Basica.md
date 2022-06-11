@@ -1,15 +1,33 @@
 # SINTAXE BÁSICA KOTLIN
 
 ## Tipos de dados
-- **long** -> Números Inteiros (64 bits)
-- **int** -> Números Inteiros (32 bits)
-- **short** -> Números Inteiros (16 bits)
-- **byte** -> Números Inteiros (8 bits)
-- **double** -> Números Reais/Decimais (64 bits)
-- **float** -> Números Reais/Decimais (32 bits)
-- **boolean** -> Verdadeiro ou Falso
-- **char** -> Caracteres
-- **array** -> Matrizes
+- **long**
+> Números Inteiros (64 bits)
+
+- **int**
+> Números Inteiros (32 bits)
+
+- **short**
+> Números Inteiros (16 bits)
+
+- **byte**
+> Números Inteiros (8 bits)
+
+- **double**
+> Números Reais/Decimais (64 bits)
+
+- **float**
+> Números Reais/Decimais (32 bits)
+
+- **boolean**
+> Verdadeiro ou Falso
+
+- **char**
+> Caracteres
+
+- **array**
+> Matrizes
+
 - **null!** ->
 
 ## Declaração de Variável
@@ -21,5 +39,12 @@
 
 - **conts val** -> Variável GLOBAL, Valor imutável, SNAKE_CASE. Constante cujo o valor é atribuído durante a compilação.
 > Exemplo de declaração: **const val MIN_AGE = 22**
+
+### Uma variável **não pode** ser declarada **sem tipo ou sem atribuição**.
+
+## Operados Aritméticos Básicos
+- **+**
+> 
+
 
 
