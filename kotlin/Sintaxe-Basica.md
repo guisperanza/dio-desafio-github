@@ -1,33 +1,15 @@
 # SINTAXE BÁSICA KOTLIN
 
 ## Tipos de dados
-- **long**
-> Números Inteiros (64 bits)
-
-- **int**
-> Números Inteiros (32 bits)
-
-- **short**
-> Números Inteiros (16 bits)
-
-- **byte**
-> Números Inteiros (8 bits)
-
-- **double**
-> Números Reais/Decimais (64 bits)
-
-- **float**
-> Números Reais/Decimais (32 bits)
-
-- **boolean**
-> Verdadeiro ou Falso
-
-- **char**
-> Caracteres
-
-- **array**
-> Matrizes
-
+- **long** : Números Inteiros (64 bits)
+- **int** : Números Inteiros (32 bits)
+- **short** : Números Inteiros (16 bits)
+- **byte** : Números Inteiros (8 bits)
+- **double** : Números Reais/Decimais (64 bits)
+- **float** : Números Reais/Decimais (32 bits)
+- **boolean** : Verdadeiro ou Falso
+- **char** : Caracteres
+- **array** : Matrizes
 - **null!** ->
 
 ## Declaração de Variável
