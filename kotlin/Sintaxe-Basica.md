@@ -26,9 +26,29 @@
 2. Uma **variável com inferência de tipo** só recerá **valores do mesmo tipo que a sua primeira atribuição**; 
 3. Utilizamos o comando **.toString()** para alterar o tipo de dado para uma string, sendo que podemos alterar a palavra String para os outros tipos de que temos e assim fazemos as alterações para esses outros tipos de dados. 
 
+## Nullability
+
+- Qualquer tipo de dado por ser nulo, porém isso deve ser explicitado na declaração de variável através do uso da interrogação (?);
+> var month:Int?
+
+- A inferência de tipo não atribui nullability.
+
 ## Operados Aritméticos Básicos
-- **+**
+- **+** ou **a.plus(b)** : soma
 > 
 
+- **-** ou **a.minus(b)** : subtração
+> 
 
+- **'*'** ou **a.times(b)** : multiplicação
+> 
+
+- **/** ou **a.div(b)** : divisão
+> 
+
+- **%** ou **a.mod(b)** : resto
+> 
+
+1. Os operadores podem ser chamados tanto como expressão quanto como comando.;
+2. O operador **+** também serve para concatenar String. 
 
