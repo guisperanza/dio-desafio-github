@@ -35,20 +35,21 @@
 
 ## Operados Aritméticos Básicos
 - **+** ou **a.plus(b)** : soma
-> 
+> Para atribuição, usamos: a +=b
 
 - **-** ou **a.minus(b)** : subtração
-> 
+> Para atribuição, usamos: a -=b
 
 - **'*'** ou **a.times(b)** : multiplicação
-> 
+> Para atribuição, usamos: a *=b
 
 - **/** ou **a.div(b)** : divisão
-> 
+> Para atribuição, usamos: a /=b
 
 - **%** ou **a.mod(b)** : resto
-> 
+> Para atribuição, usamos: a %=b
 
 1. Os operadores podem ser chamados tanto como expressão quanto como comando.;
-2. O operador **+** também serve para concatenar String. 
+2. O operador **+** também serve para concatenar String;
+3. Na **Atribuição**, o valor de A passa a receber o resultado da operação.
 
