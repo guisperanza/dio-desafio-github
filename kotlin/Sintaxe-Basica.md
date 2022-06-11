@@ -60,7 +60,7 @@
 
 - **>=** ou **a.compareTo(b)** : maior ou igual que
 
-- **<>=** ou **a.compareTo(b)** : menor ou igual que
+- **<=** ou **a.compareTo(b)** : menor ou igual que
 
 - **==** ou **a.equals(b)** : igual a
 
