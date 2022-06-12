@@ -84,3 +84,17 @@
 2. O retorno é booleano, false ou true.
 
 > Exemplo de código criado por mim usando alguns operadores: [Clique Aqui](https://pl.kotl.in/-OQs26xKk)
+
+## Manipulação de Strings
+1. Strings possuem diversos métodos associados:
+> Indexação, concatenação, comparação e formatação;
+2. Strings podem ser concatenadas com plus/+;
+3. String e Variáveis podem ser concatenadas com ${} ou apenas $ antes das variável;
+4. Também é tratada como um array de Char;
+
+
+### Alguns métodos associação/Indexação
+- First() : Acessa a primeira posição do array
+- last() : Acessa a última posição do array
+- String.lenght : Informa o número de posições da array
+- String[index] : Acessa a posição solicitada
