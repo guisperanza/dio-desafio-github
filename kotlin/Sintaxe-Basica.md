@@ -89,12 +89,12 @@
 1. Strings possuem diversos métodos associados:
 > Indexação, concatenação, comparação e formatação;
 2. Strings podem ser concatenadas com plus/+;
-3. String e Variáveis podem ser concatenadas com \_${}\_ (quando adicionados um método) ou apenas \_$\_ antes das variáveis;
+3. String e Variáveis podem ser concatenadas com `${}` (quando adicionados um método) ou apenas `$` antes das variáveis;
 4. Também é tratada como um array de Char;
 
 
 ### Alguns métodos associação/Indexação
-- First() : Acessa a primeira posição do array
-- last() : Acessa a última posição do array
-- String.lenght : Informa o número de posições da array
-- String[index] : Acessa a posição solicitada
+- **First()** : Acessa a primeira posição do array
+- **last()** : Acessa a última posição do array
+- **String.lenght** : Informa o número de posições da array
+- **String[index]** : Acessa a posição solicitada
