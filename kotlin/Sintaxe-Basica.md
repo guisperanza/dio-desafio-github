@@ -68,3 +68,19 @@
 
 1. Os comandos **compareTo** retornam os valores **-1 (menor que), 0 (igual), ou 1 (maior que)**. Já os **operadores** retornam **valores booleanos**;
 2. O comando **equals** retorna **valores booleanos**.
+
+## Operados Lógicos
+- **E** ou **(&&)** ou **(expressão1) and (expressão2)** : E
+
+- **Ou** ou **(||)** ou **(expressão1) or (expressão2)** : Ou
+
+- **contém** ou **(in)** : contém
+
+- **não contém** ou **(!in)** : não contém
+
+- **range** ou **(Int..Int))** : faixa de valores
+
+1. Quando utiliza-se o **comando**, é recomendado colocar a expressão entre **parenteses**.
+2. O retorno é booleano, false ou true.
+
+> Exemplo de código criado por mim usando alguns operadores: [Clique Aqui](https://pl.kotl.in/OIdNID82A)
