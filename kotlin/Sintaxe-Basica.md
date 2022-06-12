@@ -93,8 +93,19 @@
 4. Também é tratada como um array de Char;
 
 
-### Alguns métodos associação/Indexação
+### Alguns Métodos de Associação/Indexação
 - **First()** : Acessa a primeira posição do array
 - **last()** : Acessa a última posição do array
 - **String.lenght** : Informa o número de posições da array
 - **String[index]** : Acessa a posição solicitada
+
+### Alguns Métodos de Formatação
+- **capitalize(), toUpperCase(), toLowerCase(), decapitalize()** : Capitalização de Strings
+> capitalize() muda a primeira letra para maiúscula. toUpperCase faz com que todas as letras fiquem maiúsculas. toLowerCase faz com que todas as letras fiquem minúsculas. decapitalize faz com que a primeira letra fique minúscula.
+
+- **trimEnd(), trimStart(), trim()** : Remoação de Espaços vazios e caracteres inadequados para impressão
+> trimEnd retira o espaço final. trimStart retira o espaço inicial.
+
+- **replace(x,y)** : Substituição de caracteres
+
+- **"padrão ${x}".format(x)** : Utilizado para criar uma formatação padrão
