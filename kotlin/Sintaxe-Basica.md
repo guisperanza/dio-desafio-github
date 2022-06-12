@@ -83,4 +83,4 @@
 1. Quando utiliza-se o **comando**, é recomendado colocar a expressão entre **parenteses**.
 2. O retorno é booleano, false ou true.
 
-> Exemplo de código criado por mim usando alguns operadores: [Clique Aqui](https://pl.kotl.in/OIdNID82A)
+> Exemplo de código criado por mim usando alguns operadores: [Clique Aqui](https://pl.kotl.in/-OQs26xKk)
