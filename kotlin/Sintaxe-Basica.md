@@ -164,3 +164,27 @@ when {
 val a:Int? = null
 var number = a ?: 0
 ```
+
+### Atribuição
+1. O valor atribuído tem que estar na última linha do bloco;
+2. A condicional pode não usar chaves se só fizer a atribuição.
+
+> Exemplo 1:
+```
+val maxValue = if (a > b) a else if (a < b) b else b
+```
+
+> Exemplo 2:
+```
+val minValue = if(a > b){
+    println("b($b) é o menor valor")
+    b
+} else if (a < b){
+    println("a($a) é o menor valor")
+    a
+} else {
+    println("os valores são iguais")
+    b
+}
+```
+
