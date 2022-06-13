@@ -134,4 +134,11 @@
 > Exemplo: `fun String.randomLetter() = this [(0..this.length-1).random()].toUpperCase()`
 
 ## Estruturas de Controle
+1. Temos: if/else, when, elvis operator;
+2. Pode ser utilizado tanto para controle quanto para atribuição;
+3. Pode ser encadeado com múltiplas estruturas;
 
+```teste
+teste
+teste
+```
