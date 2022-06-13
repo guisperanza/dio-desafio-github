@@ -245,3 +245,5 @@ var number = a?: b?: 0
 ---
 
 **FIM DA ANOTAÇÕES**
+
+[LinkedIn - Guisperanza]{https://www.linkedin.com/in/guisperanza/}
