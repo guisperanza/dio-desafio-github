@@ -109,3 +109,7 @@
 - **replace(x,y)** : Substituição de caracteres
 
 - **"padrão ${x}".format(x)** : Utilizado para criar uma formatação padrão
+
+## Introdução a Funções
+
+1. Começamos as funções da seguinte maneira : `**fun** nomeDaFunção(nome:tipoDeDado):tipoDoRetorno{}`
