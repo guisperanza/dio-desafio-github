@@ -245,5 +245,6 @@ var number = a?: b?: 0
 ---
 
 **FIM DA ANOTAÇÕES**
-
-[LinkedIn - Guisperanza](https://www.linkedin.com/in/guisperanza/)
+Criado por: **Guilherme Speranza**
+[LinkedIn - GuiSperanza](https://www.linkedin.com/in/guisperanza/)
+[GitHub - GuiSperanza](https://github.com/guisperanza)
