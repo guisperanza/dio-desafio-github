@@ -70,15 +70,15 @@
 2. O comando **equals** retorna **valores booleanos**.
 
 ## Operados Lógicos
-- **E** ou **(&&)** ou **(expressão1) and (expressão2)** : E
+- **(&&)** ou **(expressão1) and (expressão2)** : E
 
-- **Ou** ou **(||)** ou **(expressão1) or (expressão2)** : Ou
+- **(||)** ou **(expressão1) or (expressão2)** : Ou
 
-- **contém** ou **(in)** : contém
+- **(in)** : contém
 
-- **não contém** ou **(!in)** : não contém
+- **(!in)** : não contém
 
-- **range** ou **(Int..Int))** : faixa de valores
+- **(Int..Int))** : faixa de valores
 
 1. Quando utiliza-se o **comando**, é recomendado colocar a expressão entre **parenteses**.
 2. O retorno é booleano, false ou true.
