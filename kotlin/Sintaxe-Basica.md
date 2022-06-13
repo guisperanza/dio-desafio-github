@@ -112,4 +112,26 @@
 
 ## Introdução a Funções
 
-1. Começamos as funções da seguinte maneira : `**fun** nomeDaFunção(nome:tipoDeDado):tipoDoRetorno{}`
+1. Começamos as funções da seguinte maneira : `fun nomeDaFunção(nome:tipoDeDado):tipoDoRetorno{}`
+> Exemplo in-line: `fun getFullName(name:String, lastName:String) = "$name $lastName" `
+> Exemplo 2: `private fun getFullName(name:String, lastName:String):String {return "$name $lastName"} `
+
+### Funções ordem superior
+1. Recebem outra função ou lambada por parâmetro;
+2. Bastante úteis para a generalização de funções e tratamento de erros;
+> Exemplo 1: `val x = calculate{12,34,::sum} ` : a função irá somar 12 e 34.
+> Exemplo 2: `val x = calculate{12,34}{a, b -> a+b} ` : a função irá somar 12 e 34.
+
+### Funções single-line
+1. Prefixo **Fun nomeDaFunção(nome:tipoDeDado) = retorno**;
+2. São funções de uma única linha;
+3. Infere o tipo de retorno.
+> Exemplo: `private fun getFullName(name:String, lastName:String) = "$name $lastName"`
+
+### Funções/Extensões
+1. Prefixo **Fun tipoDeDado.nomeDaFunção()**
+2. Cria uuma função que só pode ser chamada por um tipo específico de dado, cujo valor pode ser referenciado dentro da função através da palavra **this**.
+> Exemplo: `fun String.randomLetter() = this [(0..this.length-1).random()].toUpperCase() `
+
+## Estruturas de Controle
+
