@@ -138,12 +138,29 @@
 2. Pode ser utilizado tanto para controle quanto para atribuição;
 3. Pode ser encadeado com múltiplas estruturas;
 
-> Exemplo 1:
-```if(expressãoCondicional){
+> Exemplo **IF/ELSE**:
+```
+if(expressãoCondicional){
     //bloco de código caso essa condição seja atendida
 } else if (outraExpressãoCondicional){
     //bloco de código caso essa condição seja atendida
 } else {
     //bloco de código caso nenhuma outra condição seja atendida
 }
+```
+
+> Exemplo **WHEN**:
+```
+when {
+    expressãoCondicional1 -> {bloco de código caso a condição seja atendida}
+    expressãoCondicional2 -> {bloco de código caso a condição seja atendida}
+    expressãoCondicional3 -> {bloco de código caso a condição seja atendida}
+    expressãoCondicional4 -> {bloco de código caso a condição seja atendida}
+    else -> {bloco de código caso nenhuma outra condição seja atendida}
+}
+```
+> Exemplo **ELVIS OPERATOR**:
+```
+val a:Int? = null
+var number = a ?: 0
 ```
