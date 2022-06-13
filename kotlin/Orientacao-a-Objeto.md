@@ -1,4 +1,4 @@
-# FUNDAMENTOS DA PROGRAMAÇÃO DE ORIENTAÇÃO A OBJETOS (POO)
+# FUNDAMENTOS DA PROGRAMAÇÃO ORIENTADA A OBJETOS (POO)
 
 ## - **O QUE É A PROGRAMAÇÃO DE ORIENTAÇÃO A OBJETOS**
 
@@ -15,19 +15,21 @@ Este funcionário pode ser terceirizado ou direto. Com isso, estabelecemos uma g
 1. O POO é um método de programação (paradigma) que usa tipos de dados personalizados.
 2. Em vez de operar apenas com tipos de dados primitivos (string, int, boolean, etc), podemos construir novos tipos de dados (chamadas de **classes**).
 3. Baseia-se fundamentalmente no conceito de **OBJETOS**.
-
+<BR><BR>
 ## - **VANTAGENS DA ORIENTAÇÃO A OBJETOS**
 1. Fornece uma **estrutura modular** para a construção de programas;
 2. O software se torna mais fácil de manter;
 3. Reuso de código. Desenvolvimento mais rápido;
 4. Objetos podem ser reutilizados em aplicações diferentes;
 5. **Encapsulamento**: não é necessário conhecer a implementação interna de um objeto para poder usá-lo.
-
+<BR><BR>
 ## - **CONCEITO DE ABSTRAÇÃO**
 1. **Abstrair** é selecionar aspectos específicos de um problema a ser analisado, deixando de lado outros aspectos. Representar uma entidade do mundo real na forma de ideias.
 2. Entidades abstraídas podem se comunicar entre si por meio de troca de mensagens.
 
 > "Pelo princípio de abstração, isolamos os objetos que queremos representar do ambiente complexo em que se situam, e nesses objetos representamos somente as características que são relevantes para o problema em questão." - Correia (2006)
+
+<BR><BR>
 
 ## - **CONCEITO DE MENSAGEM**
 1. Os objetos se comunicam a partir da **troca de mensagens**;
@@ -37,6 +39,8 @@ Este funcionário pode ser terceirizado ou direto. Com isso, estabelecemos uma g
 5. Quando uma mensagem é recebida, uma operação é invocada no objeto chamado;
 6. Há vários formatos de mensagens: **procedures** (subs e functions), **passagem de sinais entre threads**, **acionamento de eventos**, etc.
 
+<BR><BR>
+
 ## - **CONCEITO DE CLASSE**
 1. Uma classe representa uma ideia ou conceito e classifica objetos que tenham propriedades similares;
 > Classes são as abstrações do mundo real que trazemos para o nosso software, por exemplo: pessoas.
@@ -44,6 +48,8 @@ Este funcionário pode ser terceirizado ou direto. Com isso, estabelecemos uma g
 > O conjunto de classes é conhecido como **NAMESPACE**
 3. Coleção de objetos descritos com os mesmos atributos e operações;
 4. Tipo personalizado de dados, "molde" para a criação de objetos.
+
+<BR><BR>
 
 ## - **CONCEITO DE OBJETOS**
 1. Ocorrência específica de uma classe OU "**Instância de classe**";
@@ -63,6 +69,8 @@ Este funcionário pode ser terceirizado ou direto. Com isso, estabelecemos uma g
 3. O ato de **invocar** (chamar) um método é a passagem de mensagens para o objetos;
 >Exemplos de métodos: a classe **PESSOA** pode ter os métodos **nascer(), comer() e morrer()**.
 
+<BR><BR>
+
 ## - **EXEMPLIFICANDO OS CONCEITOS DE CLASSE E OBJETOS**
 
  CLASSE: PESSOA
@@ -79,9 +87,10 @@ Este funcionário pode ser terceirizado ou direto. Com isso, estabelecemos uma g
 
 > A classe origina diferentes objetos.
 
-![Representação](classes-objetos.png)
+>![Representação](classes-objetos.png)<br>
+Fonte: [Bóson Treinamentos](https://youtu.be/dG7LlYne2VA)
 
-> Fonte: [Bóson Treinamentos](https://youtu.be/dG7LlYne2VA)
+<BR><BR>
 
 ## - **EXEMPLO DE CÓDIGO**
 > No exemplo abaixo, representamos a criação de uma classe chamada **CAIXA**, contendo um atributo **LADO** e um método **calcularVolume()**, em C#.
@@ -97,6 +106,33 @@ class caixa {
 ```
 > Fonte: [Bóson Treinamentos](https://youtu.be/dG7LlYne2VA)
 
+<BR><BR>
+
+## - **CONCEITO DE HERANÇA**
+1. Relacionamento entre classes, no qual uma classe **"herda"** os membros (atributos e métodos) de outra classe;
+2. Assim, podemos criar classes mais complexas sem repetição de código;
+3. E, mais uma vez, ajuda a evitar a repetição de códigos.
+4. Todos os "herdeiros" recebem a herança sem precisar repetir no seu código. Apenas colocamos os atributos e métodos que não foram herdados.
+
+> Exemplo: classificação de mamíferos no reino animal:
+
+>![Representação](herancas.png)<br>
+Fonte: [Bóson Treinamentos](https://youtu.be/dG7LlYne2VA)
+
+-- A partir da classe **A**, temos uma classe **B** com membros da classe **A**. Também temos uma classe **C** com membros da classe **B**, que por sua vez contém membros da classe **A**.
+
+<BR><BR>
+
+## - **CONCEITO DE ENCAPSULAMENTO**
+1. Combinação de atributos (características) e métodos (funções) em uma classe, deixando visível apenas o necessário para a comunicação entre objetos.
+2. Permite ocultas a complexidade do código.
+3. Não é necessário entender o funcionamento interno da classe para poder utilizar os métodos (funções).
+
+<br><br>
+
+## - **CONCEITO DE POLIMORFISMO**
+1. Uma operação de um objeto pode assumir mais de um comportamento dependendo da chamada recebida, tratando e devolvendo respostas distintas;
+2. Ocorre quando um objeto tem um comportamento diferente para uma mesma ação.
 
 <BR><BR><BR><BR><BR>
 
