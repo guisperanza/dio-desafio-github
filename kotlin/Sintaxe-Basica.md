@@ -138,7 +138,12 @@
 2. Pode ser utilizado tanto para controle quanto para atribuição;
 3. Pode ser encadeado com múltiplas estruturas;
 
-```teste
-teste
-teste
+> Exemplo 1:
+```if(expressãoCondicional){
+    //bloco de código caso essa condição seja atendida
+} else if (outraExpressãoCondicional){
+    //bloco de código caso essa condição seja atendida
+} else {
+    //bloco de código caso nenhuma outra condição seja atendida
+}
 ```
