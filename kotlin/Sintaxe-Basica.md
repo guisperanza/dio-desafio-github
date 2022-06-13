@@ -244,7 +244,7 @@ var number = a?: b?: 0
 ---
 ---
 
-**FIM DA ANOTAÇÕES**
-Criado por: **Guilherme Speranza**
-[LinkedIn - GuiSperanza](https://www.linkedin.com/in/guisperanza/)
+**FIM DA ANOTAÇÕES**<br>
+Criado por: **Guilherme Speranza**<br>
+[LinkedIn - GuiSperanza](https://www.linkedin.com/in/guisperanza/)<br>
 [GitHub - GuiSperanza](https://github.com/guisperanza)
