@@ -169,12 +169,12 @@ var number = a ?: 0
 1. O valor atribuído tem que estar na última linha do bloco;
 2. A condicional pode não usar chaves se só fizer a atribuição.
 
-> Exemplo 1:
+> Exemplo **SEM USAR CHAVES**:
 ```
 val maxValue = if (a > b) a else if (a < b) b else b
 ```
 
-> Exemplo 2:
+> Exemplo **USANDO CHAVES**:
 ```
 val minValue = if(a > b){
     println("b($b) é o menor valor")
@@ -188,3 +188,38 @@ val minValue = if(a > b){
 }
 ```
 
+### When
+1. Equivalente ao **switch** de outras linguagens;
+2. Aceita tanto valores quanto condicionais;
+3. Aceita range como case.
+
+> Exemplo 1:
+```
+when {
+    a > b -> {}
+    a != b && a > c -> {}
+    b == 0 -> {}
+    else -> {}
+}
+```
+> Exemplo 2:
+```
+when(year) {
+    -4000..475 -> "Antiguidade"
+    476..1452 -> "Medieval"
+    1453..1789 -> "Moderna"
+    currentYear -> "Tempos atuais"
+}
+```
+### Elvis Operator
+1. O mais próximo que a linguagem Kotlin possui de um operador ternário;
+2. Verifica se o valor é nulo E apresenta uma opção caso o valor seja nulo;
+3. Poder ser encadeado;
+
+> Exemplo:
+```
+val a:Int? = null
+val b:Int? = 9
+var number = a?: b?: 0
+```
+>Nesse caso, se o valor  de **a** não for nulo, o **number** recebe **a**. <br> Se o valor de **a** for nulo e **b** não for nulo, **number** recebe o valor de **b**. <br> Se **a** e **b** forem nulos, **number** recebe o valor 0.
