@@ -78,6 +78,7 @@ Este funcionário pode ser terceirizado ou direto. Com isso, estabelecemos uma g
 - Método: nascer(), morrer()
 
 > A classe origina diferentes objetos.
+
 ![Representação](classes-objetos.png)
 
 > Fonte: [Bóson Treinamentos](https://youtu.be/dG7LlYne2VA)
