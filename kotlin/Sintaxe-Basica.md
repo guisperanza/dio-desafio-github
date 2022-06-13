@@ -223,3 +223,25 @@ val b:Int? = 9
 var number = a?: b?: 0
 ```
 >Nesse caso, se o valor  de **a** não for nulo, o **number** recebe **a**. <br> Se o valor de **a** for nulo e **b** não for nulo, **number** recebe o valor de **b**. <br> Se **a** e **b** forem nulos, **number** recebe o valor 0.
+
+## Estruturas de Repetição
+1. Temos as seguintes estruturas: **While, do..while, for e forEach**;
+2. Essas estruturas são similares às convencionais em outras linguagens;
+3. Aceita os comandos **in, range, until, downTo e step**;
+
+### Como utilizar os comandos
+1. **FOR**: `for(variavelIndexadora in/until/downTo faixa de valores/condicional step intervalo)`
+2. **IN**: conta do valor inicial até o valor final estabelecido
+> Exemplo: `for(i in 0..10)` 
+3. **UNTIL**: conta do valor atual até o valor estabelecido -1. Ou seja, se o valor estabelecido for 10, ele contará até 9.
+> Exemplo: `for(i in 0 until 10)` 
+4. **DOWNTO**: conta de maneira **decrescente**.
+> Exemplo: `for(i in 10 downTo 0)` 
+5. **STEP**: Determina o intervalo da contagem. Se o step for 2, ele contará de 2 em 2.
+> Exemplo: `for(i in 0..10 step 2)`
+
+---
+---
+---
+
+**FIM DA ANOTAÇÕES**
