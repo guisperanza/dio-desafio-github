@@ -113,13 +113,13 @@
 ## Introdução a Funções
 
 1. Começamos as funções da seguinte maneira : `fun nomeDaFunção(nome:tipoDeDado):tipoDoRetorno{}`
-> Exemplo in-line: `fun getFullName(name:String, lastName:String) = "$name $lastName" `
+> Exemplo in-line: `fun getFullName(name:String, lastName:String) = "$name $lastName" ` &nbsp;
 > Exemplo 2: `private fun getFullName(name:String, lastName:String):String {return "$name $lastName"} `
 
 ### Funções ordem superior
 1. Recebem outra função ou lambada por parâmetro;
 2. Bastante úteis para a generalização de funções e tratamento de erros;
-> Exemplo 1: `val x = calculate{12,34,::sum} ` : a função irá somar 12 e 34.
+> Exemplo 1: `val x = calculate{12,34,::sum} ` : a função irá somar 12 e 34. &nbsp;
 > Exemplo 2: `val x = calculate{12,34}{a, b -> a+b} ` : a função irá somar 12 e 34.
 
 ### Funções single-line
