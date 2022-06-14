@@ -26,13 +26,15 @@ fun multi(a:Int, b:Int):Double{
     return x.times(y)}
 
 //Função DIVISÃO
-fun divisao(a:Int, b:Int):Int { 
-       return a.div(b)}
+fun divisao(a:Int, b:Int): Double{
+    val x = a.toDouble()
+    val y = b.toDouble() 
+    return x.div(y)}
 
 /* Criado por Gui Speranza
  * follow me at: github.com/guisperanza 
  * That's all, folks
-* /
+*/
 
 ```
 > O projeto ainda não está finalizado, mas quero ir deixando o código anotado por aqui.<br>
