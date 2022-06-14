@@ -196,7 +196,6 @@ PJ - Pessoa Jurídica
 1. Utilizamos abstrações de classe para **criar novos objetos sem a necessidade de reescrever códigos**.
 2. Todos os novos objetos **recebem atributos e métodos como herança**.
 3. Podemos **adicionar métodos e atributos exclusivos/específicos** para esses novos objetos.
-4. Usamos o código `open class` e `open val` para criar a classe a ser abstraída.
 
 ### Exemplo de código: <br><br>
 
