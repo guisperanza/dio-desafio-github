@@ -14,6 +14,7 @@
 - [**CONCEITO DE POLIMORFISMO**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--conceito-de-polimorfismo)
 - [**DATA CLASS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--data-class)
 - [**ENUM CLASS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--enum-class)
+- [**TRANSFORMANDO CLASSES EM ABSTRAÇÕES**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--transformando-classes-em-abstra%C3%A7%C3%B5es)
 
 ---
 
@@ -260,7 +261,7 @@ fun main() {
     
     fun imprimeRelatorio(funcionario: Funcionario) = println(funcionario.toString())
 ```
-> Código no **Kotlin Playground** para você treinar: [Clique Aqui]()
+> Código no **Kotlin Playground** para você treinar: [Clique Aqui](https://pl.kotl.in/iDyvWR7vI)
 
 <BR><BR><BR>
 
