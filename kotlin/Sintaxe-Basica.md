@@ -1,6 +1,20 @@
 # SINTAXE BÁSICA KOTLIN
 
-## Tipos de dados
+### **MENU DE CONTEÚDOS**
+- [**TIPOS DE DADOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#sintaxe-b%C3%A1sica-kotlin)
+- [**DECLARAÇÃO DE VARIÁVEL**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#declara%C3%A7%C3%A3o-de-vari%C3%A1vel)
+- [**NULLABILITY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#nullability)
+- [**OPERADORES ARITMÁTICOS BÁSICOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#operados-aritm%C3%A9ticos-b%C3%A1sicos)
+- [**OPERADORES COMPARATIVOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#operados-comparativos)
+- [**OPERADORES LÓGICOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#operados-l%C3%B3gicos)
+- [**MANIPULAÇÃO DE STRINGS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#manipula%C3%A7%C3%A3o-de-strings)
+- [**INTRODUÇÃO A FUNÇÕES**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#introdu%C3%A7%C3%A3o-a-fun%C3%A7%C3%B5es)
+- [**ESTRUTURAS DE CONTROLE**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#estruturas-de-controle)
+- [**ESTRUTURAS DE REPETIÇÃO**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#estruturas-de-repeti%C3%A7%C3%A3o)
+
+---
+
+## - **Tipos de dados**
 - **long** : Números Inteiros (64 bits)
 - **int** : Números Inteiros (32 bits)
 - **short** : Números Inteiros (16 bits)
@@ -12,7 +26,7 @@
 - **array** : Matrizes
 - **null!** ->
 
-## Declaração de Variável
+## - **Declaração de Variável**
 - **var** -> Variável LOCAL, Valor mutável, CamelCase. Essa variável pode ter o seu valor alterado durante o código.
 > Exemplo de declaração: **var currentAge = 22**
 
@@ -26,14 +40,14 @@
 2. Uma **variável com inferência de tipo** só recerá **valores do mesmo tipo que a sua primeira atribuição**; 
 3. Utilizamos o comando **.toString()** para alterar o tipo de dado para uma string, sendo que podemos alterar a palavra String para os outros tipos de que temos e assim fazemos as alterações para esses outros tipos de dados. 
 
-## Nullability
+## - **Nullability**
 
 - Qualquer tipo de dado por ser nulo, porém isso deve ser explicitado na declaração de variável através do uso da interrogação (?);
 > var month:Int?
 
 - A inferência de tipo não atribui nullability.
 
-## Operados Aritméticos Básicos
+## - **Operados Aritméticos Básicos**
 - **+** ou **a.plus(b)** : soma
 > Para atribuição, usamos: a +=b
 
@@ -53,7 +67,7 @@
 2. O operador **+** também serve para concatenar String;
 3. Na **Atribuição**, o valor de A passa a receber o resultado da operação.
 
-## Operados Comparativos
+## - **Operados Comparativos**
 - **>** ou **a.compareTo(b)** : maior que
 
 - **<** ou **a.compareTo(b)** : mmenor que
@@ -69,7 +83,7 @@
 1. Os comandos **compareTo** retornam os valores **-1 (menor que), 0 (igual), ou 1 (maior que)**. Já os **operadores** retornam **valores booleanos**;
 2. O comando **equals** retorna **valores booleanos**.
 
-## Operados Lógicos
+## - **Operados Lógicos**
 - **(&&)** ou **(expressão1) and (expressão2)** : E
 
 - **(||)** ou **(expressão1) or (expressão2)** : Ou
@@ -85,7 +99,7 @@
 
 > Exemplo de código criado por mim usando alguns operadores: [Clique Aqui](https://pl.kotl.in/-OQs26xKk)
 
-## Manipulação de Strings
+## - **Manipulação de Strings**
 1. Strings possuem diversos métodos associados:
 > Indexação, concatenação, comparação e formatação;
 2. Strings podem ser concatenadas com plus/+;
@@ -110,7 +124,7 @@
 
 - **"padrão ${x}".format(x)** : Utilizado para criar uma formatação padrão
 
-## Introdução a Funções
+## - **Introdução a Funções**
 
 1. Começamos as funções da seguinte maneira : `fun nomeDaFunção(nome:tipoDeDado):tipoDoRetorno{}`
 > Exemplo in-line: `fun getFullName(name:String, lastName:String) = "$name $lastName" ` <br>
@@ -133,7 +147,7 @@
 2. Cria uuma função que só pode ser chamada por um tipo específico de dado, cujo valor pode ser referenciado dentro da função através da palavra **this**.
 > Exemplo: `fun String.randomLetter() = this [(0..this.length-1).random()].toUpperCase()`
 
-## Estruturas de Controle
+## - **Estruturas de Controle**
 1. Temos: if/else, when, elvis operator;
 2. Pode ser utilizado tanto para controle quanto para atribuição;
 3. Pode ser encadeado com múltiplas estruturas;
@@ -224,7 +238,7 @@ var number = a?: b?: 0
 ```
 >Nesse caso, se o valor  de **a** não for nulo, o **number** recebe **a**. <br> Se o valor de **a** for nulo e **b** não for nulo, **number** recebe o valor de **b**. <br> Se **a** e **b** forem nulos, **number** recebe o valor 0.
 
-## Estruturas de Repetição
+## - **Estruturas de Repetição**
 1. Temos as seguintes estruturas: **While, do..while, for e forEach**;
 2. Essas estruturas são similares às convencionais em outras linguagens;
 3. Aceita os comandos **in, range, until, downTo e step**;
@@ -240,7 +254,6 @@ var number = a?: b?: 0
 5. **STEP**: Determina o intervalo da contagem. Se o step for 2, ele contará de 2 em 2.
 > Exemplo: `for(i in 0..10 step 2)`
 
----
 ---
 ---
 
