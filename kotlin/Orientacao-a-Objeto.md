@@ -1,5 +1,22 @@
 # FUNDAMENTOS DA PROGRAMAÇÃO ORIENTADA A OBJETOS (POO)
 
+### **MENU DE CONTEÚDOS**
+- [**O QUE É A PROGRAMAÇÃO DE ORIENTAÇÃO A OBJETOS**](#o-que-é-a-programação-de-orientação-a-objetos)
+- [**VANTAGENS DA ORIENTAÇÃO A OBJETOS**](#vantagens-da-orientação-a-objetos)
+- [**CONCEITO DE ABSTRAÇÃO**](#conceito-de-abstração)
+- [**CONCEITO DE MENSAGEM**](#conceito-de-mensagem)
+- [**CONCEITO DE CLASSE**](#conceito-de-objetos)
+- [**CONCEITO DE OBJETOS**](#conceito-de-objetos)
+- [**EXEMPLIFICANDO OS CONCEITOS DE CLASSE E OBJETOS**](#exemplificando-os-conceitos-de-classe-e-objetos)
+- [**EXEMPLO DE CÓDIGO PARA CLASS**](#exemplo-de-código-para-class)
+- [**CONCEITO DE HERANÇA**](#conceito-de-herança)
+- [**CONCEITO DE ENCAPSULAMENTO**](#conceito-de-encapsulamento)
+- [**CONCEITO DE POLIMORFISMO**](#conceito-de-polimorfismo)
+- [**DATA CLASS**](#data-class)
+- [**ENUM CLASS**](#enum-class)
+
+---
+
 ## - **O QUE É A PROGRAMAÇÃO DE ORIENTAÇÃO A OBJETOS**
 
 A POO é um paradigma de programação que se propõe a abordar o design de um sistema em termos de entidades, os objetos, e relacionamentos entre essas entidades. 
@@ -33,7 +50,7 @@ Este funcionário pode ser terceirizado ou direto. Com isso, estabelecemos uma g
 
 > "Pelo princípio de abstração, isolamos os objetos que queremos representar do ambiente complexo em que se situam, e nesses objetos representamos somente as características que são relevantes para o problema em questão." - Correia (2006)
 
-<BR><BR>
+<BR>
 
 ## - **CONCEITO DE MENSAGEM**
 1. Os objetos se comunicam a partir da **troca de mensagens**;
@@ -53,7 +70,7 @@ Este funcionário pode ser terceirizado ou direto. Com isso, estabelecemos uma g
 3. Coleção de objetos descritos com os mesmos atributos e operações;
 4. Tipo personalizado de dados, "molde" para a criação de objetos.
 
-<BR>
+<br>
 
 ## - **CONCEITO DE OBJETOS**
 1. Ocorrência específica de uma classe OU "**Instância de classe**";
@@ -96,7 +113,7 @@ Fonte: [Bóson Treinamentos](https://youtu.be/dG7LlYne2VA)
 
 <BR>
 
-## - **EXEMPLO DE CÓDIGO**
+## - **EXEMPLO DE CÓDIGO PARA CLASS**
 > No exemplo abaixo, representamos a criação de uma classe chamada **CAIXA**, contendo um atributo **LADO** e um método **calcularVolume()**, em C#.
 
 ```
@@ -137,6 +154,44 @@ Fonte: [Bóson Treinamentos](https://youtu.be/dG7LlYne2VA)
 ## - **CONCEITO DE POLIMORFISMO**
 1. Uma operação de um objeto pode assumir mais de um comportamento dependendo da chamada recebida, tratando e devolvendo respostas distintas;
 2. Ocorre quando um objeto tem um comportamento diferente para uma mesma ação.
+
+<br>
+
+## - **DATA CLASS**
+- Uma data class é uma classe imutável, ou seja, os atributos não são alterados depois de declarados.
+> Exemplo de declaração: `data class Conta (val name: String, val age: Int)` 
+
+<br>
+
+## - **ENUM CLASS**
+1. Uma **ENUM** é uma classe especial que representa um **GRUPO DE CONSTANTES**.
+2. Em Kotlin, enum é chamado de **soft-keywork**.
+3. Enum tem um significado especial quando vem **antes de class**, mas podemos usá-la como um nome regular de uma variável/constante em outros lugares.
+> Exemplo: `val enum = "ABC"`
+4. Assim como em Java, enums não são listas de valores: podemos declarar propriedades e métodos em classes Enum.
+> Exemplo de como declarar uma ENUM:
+
+```
+enum class ClienteTipo(val descricao: String){
+    PF("Pessoa Física"),
+    PJ("Pessoa Jurídica")
+}
+
+fun main() {
+    ClienteTipo.values().forEach { elemento ->
+    println("${elemento.name} - ${elemento.descricao}")
+    }
+}
+```
+> Como resultado, teremos na tela:<br>
+PF - Pessoa Física<br>
+PJ - Pessoa Jurídica
+
+> Link do código no Kotlin Playground: [Clique Aqui](https://pl.kotl.in/Ttgv7Okfz)
+
+<br>
+
+## - **ABSTRAÇÕES**
 
 <BR><BR><BR>
 
