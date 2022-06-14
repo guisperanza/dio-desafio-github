@@ -10,5 +10,5 @@ Repositório criado para o Desafio de Projeto sobre Git/GitHub no Bootcamp Santa
 
 ## Projetos de Código
 - [Calculadora em Kotlin - **NÃO FINALIZADA e JÁ TESTADA**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Projetos%20de%20C%C3%B3digo/code-calculadora-kotlin.md)
-- [Calculadora Alternativa em Kotlin - **NÃO FINALIZADA e PRECISA SER TESTADA**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Projetos%20de%20C%C3%B3digo/code-calculadora-kotlin.md)
+- [Calculadora Alternativa em Kotlin - **NÃO FINALIZADA e PRECISA SER TESTADA**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Projetos%20de%20C%C3%B3digo/calculadora-v2.md)
 
