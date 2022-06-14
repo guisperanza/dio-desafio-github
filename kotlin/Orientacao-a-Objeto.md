@@ -2,18 +2,18 @@
 
 ### **MENU DE CONTEÚDOS**
 - [**O QUE É A PROGRAMAÇÃO DE ORIENTAÇÃO A OBJETOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--o-que-%C3%A9-a-programa%C3%A7%C3%A3o-de-orienta%C3%A7%C3%A3o-a-objetos)
-- [**VANTAGENS DA ORIENTAÇÃO A OBJETOS**](#vantagens-da-orientação-a-objetos)
-- [**CONCEITO DE ABSTRAÇÃO**](#conceito-de-abstração)
-- [**CONCEITO DE MENSAGEM**](#conceito-de-mensagem)
-- [**CONCEITO DE CLASSE**](#conceito-de-objetos)
-- [**CONCEITO DE OBJETOS**](#conceito-de-objetos)
-- [**EXEMPLIFICANDO OS CONCEITOS DE CLASSE E OBJETOS**](#exemplificando-os-conceitos-de-classe-e-objetos)
-- [**EXEMPLO DE CÓDIGO PARA CLASS**](#exemplo-de-código-para-class)
-- [**CONCEITO DE HERANÇA**](#conceito-de-herança)
-- [**CONCEITO DE ENCAPSULAMENTO**](#conceito-de-encapsulamento)
-- [**CONCEITO DE POLIMORFISMO**](#conceito-de-polimorfismo)
-- [**DATA CLASS**](#data-class)
-- [**ENUM CLASS**](#enum-class)
+- [**VANTAGENS DA ORIENTAÇÃO A OBJETOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--vantagens-da-orienta%C3%A7%C3%A3o-a-objetos)
+- [**CONCEITO DE ABSTRAÇÃO**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--conceito-de-abstra%C3%A7%C3%A3o)
+- [**CONCEITO DE MENSAGEM**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--conceito-de-mensagem)
+- [**CONCEITO DE CLASSE**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--conceito-de-classe)
+- [**CONCEITO DE OBJETOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--conceito-de-objetos)
+- [**EXEMPLIFICANDO OS CONCEITOS DE CLASSE E OBJETOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--exemplificando-os-conceitos-de-classe-e-objetos)
+- [**EXEMPLO DE CÓDIGO PARA CLASS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--exemplo-de-c%C3%B3digo-para-class)
+- [**CONCEITO DE HERANÇA**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--conceito-de-heran%C3%A7a)
+- [**CONCEITO DE ENCAPSULAMENTO**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--conceito-de-encapsulamento)
+- [**CONCEITO DE POLIMORFISMO**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--conceito-de-polimorfismo)
+- [**DATA CLASS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--data-class)
+- [**ENUM CLASS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--enum-class)
 
 ---
 
