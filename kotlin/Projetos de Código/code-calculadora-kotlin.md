@@ -38,7 +38,7 @@ fun divisao(a:Int, b:Int): Double{
 
 ```
 > O projeto ainda não está finalizado, mas quero ir deixando o código anotado por aqui.<br>
-Link para o código no [Kotlin Playground](https://pl.kotl.in/veciV9xGr)
+Link para o código no [Kotlin Playground](https://pl.kotl.in/Ea9KQKgJc)
 
 <BR><BR><BR><BR><BR>
 
