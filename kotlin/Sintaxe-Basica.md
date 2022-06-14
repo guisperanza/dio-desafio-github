@@ -1,16 +1,16 @@
 # SINTAXE BÁSICA KOTLIN
 
 ### **MENU DE CONTEÚDOS**
-- [**TIPOS DE DADOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#sintaxe-b%C3%A1sica-kotlin)
-- [**DECLARAÇÃO DE VARIÁVEL**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#declara%C3%A7%C3%A3o-de-vari%C3%A1vel)
-- [**NULLABILITY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#nullability)
-- [**OPERADORES ARITMÁTICOS BÁSICOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#operados-aritm%C3%A9ticos-b%C3%A1sicos)
-- [**OPERADORES COMPARATIVOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#operados-comparativos)
-- [**OPERADORES LÓGICOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#operados-l%C3%B3gicos)
-- [**MANIPULAÇÃO DE STRINGS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#manipula%C3%A7%C3%A3o-de-strings)
-- [**INTRODUÇÃO A FUNÇÕES**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#introdu%C3%A7%C3%A3o-a-fun%C3%A7%C3%B5es)
-- [**ESTRUTURAS DE CONTROLE**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#estruturas-de-controle)
-- [**ESTRUTURAS DE REPETIÇÃO**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#estruturas-de-repeti%C3%A7%C3%A3o)
+- [**TIPOS DE DADOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--sintaxe-b%C3%A1sica-kotlin)
+- [**DECLARAÇÃO DE VARIÁVEL**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--declara%C3%A7%C3%A3o-de-vari%C3%A1vel)
+- [**NULLABILITY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--nullability)
+- [**OPERADORES ARITMÁTICOS BÁSICOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--operados-aritm%C3%A9ticos-b%C3%A1sicos)
+- [**OPERADORES COMPARATIVOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--operados-comparativos)
+- [**OPERADORES LÓGICOS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--operados-l%C3%B3gicos)
+- [**MANIPULAÇÃO DE STRINGS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--manipula%C3%A7%C3%A3o-de-strings)
+- [**INTRODUÇÃO A FUNÇÕES**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--introdu%C3%A7%C3%A3o-a-fun%C3%A7%C3%B5es)
+- [**ESTRUTURAS DE CONTROLE**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--estruturas-de-controle)
+- [**ESTRUTURAS DE REPETIÇÃO**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md#--estruturas-de-repeti%C3%A7%C3%A3o)
 
 ---
 
