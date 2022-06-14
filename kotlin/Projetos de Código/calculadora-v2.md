@@ -1,3 +1,5 @@
+# CÓDIGO DE UMA VERSÃO ALTERNATIVA DA CALCULADORA EM KOTLIN
+
 ```
 fun main() {
     println(" ----- PROJETO DE CALCULADORA ----- ")
@@ -47,3 +49,15 @@ fun divisao(num1:Float, num2:Float) = println("O resultado da divisão é: $[a /
  * That's all, folks
 */
 ```
+> O projeto ainda não está finalizado, mas quero ir deixando o código anotado por aqui.<br>
+Link para o código no [Kotlin Playground](https://pl.kotl.in/QMJZvetSN)
+
+<BR><BR><BR><BR><BR>
+
+---
+---
+
+**FIM DA ANOTAÇÕES**<br>
+Criado por: **Guilherme Speranza**<br>
+[LinkedIn - GuiSperanza](https://www.linkedin.com/in/guisperanza/)<br>
+[GitHub - GuiSperanza](https://github.com/guisperanza)
