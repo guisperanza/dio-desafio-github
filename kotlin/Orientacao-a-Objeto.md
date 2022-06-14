@@ -191,7 +191,76 @@ PJ - Pessoa Jurídica
 
 <br>
 
-## - **ABSTRAÇÕES**
+## - **TRANSFORMANDO CLASSES EM ABSTRAÇÕES**
+1. Utilizamos abstrações de classe para **criar novos objetos sem a necessidade de reescrever códigos**.
+2. Todos os novos objetos **recebem atributos e métodos como herança**.
+3. Podemos **adicionar métodos e atributos exclusivos/específicos** para esses novos objetos.
+4. Usamos o código `open class` e `open val` para criar a classe a ser abstraída.
+
+### Exemplo de código: <br><br>
+
+> Criando a classe abstrata
+```
+abstract class Pessoa (
+    val nome: String,
+    val cpf: String
+)
+```
+> Criando a classe abstrata filha com novos atributos e métodos
+```
+abstract class Funcionario(
+    nome: String,
+    cpf: String,
+    val salario: Double
+) : Pessoa(nome, cpf) {
+	protected abstract fun calculoAuxilio():Double
+    protected abstract fun auxilioTerno():Double
+
+    override fun toString(): String = """
+    Nome: $nome
+    CPF: $cpf
+    Salário: $salario
+    Auxílio Salário: R$ ${calculoAuxilio()}
+    Auxílio Terno: R$ ${auxilioTerno()}
+    """.trimIndent()   
+}
+```
+> Criando o **objeto analista** com métodos herdados da **class Pessoa** e **class Funcionario**
+```
+class Analista(
+    nome: String, 
+    cpf: String,
+    salario: Double
+) : Funcionario(nome, cpf, salario) {
+    override fun calculoAuxilio() = salario * 0.1
+    override fun auxilioTerno() = salario * 0.0
+}
+```
+> Criando o **objeto gerente** com métodos herdados da **class Pessoa** e **class Funcionario**
+```
+class Gerente(
+    nome: String, 
+    cpf: String,
+    salario: Double
+) : Funcionario(nome, cpf, salario) {
+    override fun calculoAuxilio() = salario * 0.3
+    override fun auxilioTerno() = salario * 0.1
+}
+```
+> Função principal para chamar as informações
+```
+fun main() {
+   
+    val funcionarioJoao = Analista(nome = "João Rodrigues", cpf = "798.456.132-00", salario = 1500.00)
+   	imprimeRelatorio(funcionarioJoao)
+    println("---")
+    val gerenteMarcos = Gerente(nome = "Marcos Assunção", cpf = "132.456.789-00", salario = 5000.00)
+   	imprimeRelatorio(gerenteMarcos)
+}
+    
+    fun imprimeRelatorio(funcionario: Funcionario) = println(funcionario.toString())
+```
+> Código no **Kotlin Playground** para você treinar: [Clique Aqui]()
 
 <BR><BR><BR>
 
