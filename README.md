@@ -8,3 +8,7 @@ Repositório criado para o Desafio de Projeto sobre Git/GitHub no Bootcamp Santa
 - [Sintaxe Básica - Kotlin](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Sintaxe-Basica.md)
 - [Orientação a Objetos - Kotlin](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md)
 
+## Projetos de Código
+- [Calculadora em Kotlin - **NÃO FINALIZADA**](#)
+
+
