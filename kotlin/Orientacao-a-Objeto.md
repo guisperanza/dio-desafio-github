@@ -219,7 +219,7 @@ abstract class Funcionario(
     override fun toString(): String = """
     Nome: $nome
     CPF: $cpf
-    Salário: $salario
+    Salário: R$ $salario
     Auxílio Salário: R$ ${calculoAuxilio()}
     Auxílio Terno: R$ ${auxilioTerno()}
     """.trimIndent()   
@@ -252,15 +252,13 @@ class Gerente(
 fun main() {
    
     val funcionarioJoao = Analista(nome = "João Rodrigues", cpf = "798.456.132-00", salario = 1500.00)
-   	imprimeRelatorio(funcionarioJoao)
+   	println(funcionarioJoao)
     println("---")
     val gerenteMarcos = Gerente(nome = "Marcos Assunção", cpf = "132.456.789-00", salario = 5000.00)
-   	imprimeRelatorio(gerenteMarcos)
+   	println(gerenteMarcos)
 }
-    
-    fun imprimeRelatorio(funcionario: Funcionario) = println(funcionario.toString())
 ```
-> Código no **Kotlin Playground** para você treinar: [Clique Aqui](https://pl.kotl.in/iDyvWR7vI)
+> Código no **Kotlin Playground** para você treinar: [Clique Aqui](https://pl.kotl.in/1TbWnW4Pl)
 
 <BR><BR><BR>
 
