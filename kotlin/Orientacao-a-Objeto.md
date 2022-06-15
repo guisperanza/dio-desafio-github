@@ -15,6 +15,7 @@
 - [**DATA CLASS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--data-class)
 - [**ENUM CLASS**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--enum-class)
 - [**TRANSFORMANDO CLASSES EM ABSTRAÇÕES**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/Orientacao-a-Objeto.md#--transformando-classes-em-abstra%C3%A7%C3%B5es)
+- [**POLIMORFISMO NA PRÁTICA**]()
 
 ---
 
@@ -154,7 +155,8 @@ Fonte: [Bóson Treinamentos](https://youtu.be/dG7LlYne2VA)
 
 ## - **CONCEITO DE POLIMORFISMO**
 1. Uma operação de um objeto pode assumir mais de um comportamento dependendo da chamada recebida, tratando e devolvendo respostas distintas;
-2. Ocorre quando um objeto tem um comportamento diferente para uma mesma ação.
+2. Ocorre quando um objeto tem um comportamento diferente para uma mesma ação;
+3. Serve para que as classes filhas tenham liberdade para alterar ou complementar comportamentos herdados das classes pai.
 
 <br>
 
