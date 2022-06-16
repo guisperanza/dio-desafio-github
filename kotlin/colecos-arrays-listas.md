@@ -26,7 +26,7 @@
 
 <br>
 
-- [**OPERAÇÃO ou MÉTODO COLETOR**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--listof)
+- [**OPERAÇÃO ou MÉTODO COLETOR**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--opera%C3%A7%C3%A3o-ou-m%C3%A9todo-coletor)
 
 ---
 ## - **CONCEITOS SOBRE COLEÇÕES**
