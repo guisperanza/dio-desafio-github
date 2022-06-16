@@ -18,15 +18,15 @@
     -> [**max, min e average**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--max-min-e-average)<br>
     -> [**filter**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--filter)<br>
     -> [**count, find e any**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array-count-find-e-any)<br>
-    -> [**listOf**]()<br>
-    -> [**sortedBy**]()<br>
-    -> [**groupBy**]()<br>
-    -> [**setOf**]()<br>
-    -> [**mapOf**]()
+    -> [**listOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--listof)<br>
+    -> [**sortedBy**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--sortedby)<br>
+    -> [**groupBy**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--groupby)<br>
+    -> [**setOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--setof)<br>
+    -> [**mapOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--mapof)
 
 <br>
 
-- [**OPERAÇÃO ou MÉTODO COLETOR**]()
+- [**OPERAÇÃO ou MÉTODO COLETOR**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--listof)
 
 ---
 ## - **CONCEITOS SOBRE COLEÇÕES**
