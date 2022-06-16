@@ -8,10 +8,10 @@
     -> [**Array/arrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array-de-string)<br>
     -> [**DoubleArray/doubleArrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--double-array)<br>
 - [**OPERAÇÕES COM ARRAY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--opera%C3%A7%C3%B5es-com-array)<br>
-    -> [**SORT**]()<br>
-    -> [**MAX, MIN e AVERAGE**]()<br>
-    -> [**AVERAGE**]()<br>
-    -> [**ARRAY COUNT, FIND e ANY**]()<br>
+    -> [**SORT**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--sort)<br>
+    -> [**MAX, MIN e AVERAGE**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--max-min-e-average)<br>
+    -> [**FILTER**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--filter)<br>
+    -> [**ARRAY COUNT, FIND e ANY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array-count-find-e-any)<br>
 - [**PRÓXIMO TÓPICO**]()
 
 ---
