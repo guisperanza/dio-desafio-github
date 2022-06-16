@@ -3,16 +3,30 @@
 ### **MENU DE CONTEÚDOS**
 - [**CONCEITOS SOBRE COLEÇÕES**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--conceitos-sobre-cole%C3%A7%C3%B5es)<br> 
     -> [**Como Criar uma Coleção**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--como-criar-cole%C3%A7%C3%B5es)
+
+<br>
+
 - [**ARRAY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array)<br> 
     -> [**IntArray/intArrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--intarrayof)<br>
     -> [**Array/arrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array-de-string)<br>
     -> [**DoubleArray/doubleArrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--double-array)<br>
+
+<br>
+
 - [**OPERAÇÕES COM ARRAY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--opera%C3%A7%C3%B5es-com-array)<br>
     -> [**sort()**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--sort)<br>
     -> [**max, min e average**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--max-min-e-average)<br>
     -> [**filter**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--filter)<br>
     -> [**count, find e any**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array-count-find-e-any)<br>
-- [**PRÓXIMO TÓPICO**]()
+    -> [**listOf**]()<br>
+    -> [**sortedBy**]()<br>
+    -> [**groupBy**]()<br>
+    -> [**setOf**]()<br>
+    -> [**mapOf**]()
+
+<br>
+
+- [**OPERAÇÃO ou MÉTODO COLETOR**]()
 
 ---
 ## - **CONCEITOS SOBRE COLEÇÕES**
@@ -179,7 +193,7 @@ fun main() {
 }
 ```
 
-### - **MAX, MIN e AVERAGE**
+### - **MAXORNULL, MINORNULL e AVERAGE**
 ``` 
 fun main() {
     val barra:String = "------------------"
@@ -191,8 +205,8 @@ fun main() {
     
     println(barra)
     
-    println("O maior salário é: R$ ${salarios.max()}") //Retorna o maior valor da array
-    println("O menor salário é: R$ ${salarios.min()}") //Retorna o menor valor da array
+    println("O maior salário é: R$ ${salarios.maxOrNull()}") //Retorna o maior valor da array
+    println("O menor salário é: R$ ${salarios.minOrNull()}") //Retorna o menor valor da array
     println("A média salarial é: R$ ${salarios.average()}") //Retorna a média dos valores da array    
   
 }
@@ -233,6 +247,255 @@ fun main() {
 
 }
 ```
+### - **ListOF**
+- Usado para criar uma lista na collection
+```
+fun main() {
+    val joao = Funcionarios(nome = "João", salario = 1500)
+    val pedro = Funcionarios(nome = "Pedro", salario = 5000)
+    val maria = Funcionarios(nome = "Maria", salario = 3500)
+
+    val barra: String = "------------------"
+    
+    val funcionarios = listOf(joao, pedro, maria)
+  
+    funcionarios.forEach{ println(it)}
+    
+    println(barra)
+    
+    println(funcionarios.find { it.nome == "Maria"}) //Busca na lista e retorna apenas a condição verdadeira
+  
+}
+
+data class Funcionarios (
+	val nome: String,
+	val salario: Int
+) {
+    override fun toString():String = """
+    Nome: $nome
+    Salário: R$ $salario
+    
+    """.trimIndent()
+}
+```
+### - **SortedBy**
+- Usado para colocar os valores das collections em ordem crescente seguindo uma condição
+
+```
+fun main() {
+    val joao = Funcionarios(nome = "João", salario = 1500, tipoDeContratacao = "PF")
+    val pedro = Funcionarios(nome = "Pedro", salario = 5000, tipoDeContratacao = "PF")
+    val maria = Funcionarios(nome = "Maria", salario = 3500, tipoDeContratacao = "PJ")
+
+    val barra: String = "------------------"
+    
+    val funcionarios = listOf(joao, pedro, maria)
+  
+    funcionarios
+        .forEach { println(it) }
+       
+    println(barra)
+    
+    funcionarios
+        .sortedBy { it.salario }
+        .forEach { println(it) }
+  
+}
+
+data class Funcionarios (
+	val nome: String,
+	val salario: Int,
+    val tipoDeContratacao: String
+) {
+    override fun toString():String = """
+    Nome: $nome
+    Salário: R$ $salario
+    Tipo de Contratação: $tipoDeContratacao
+    
+    """.trimIndent()
+}
+```
+### - **GroupBy**
+1. Usado para agrupos collections sob uma mesma condição;
+2. Podemos ou não declarar uma condição de agrupamento;
+   > Exemplo: `.groupBy { it.tipoDeContratacao == "CLT" }` ou `.groupBy { it.tipoDeContratacao }` 
+3. Quando agrupamos, um **MAPA É CRIADO**.
+```
+fun main() {
+    val joao = Funcionarios(nome = "João", salario = 1500, tipoDeContratacao = "CLT")
+    val pedro = Funcionarios(nome = "Pedro", salario = 5000, tipoDeContratacao = "CLT")
+    val maria = Funcionarios(nome = "Maria", salario = 3500, tipoDeContratacao = "PJ")
+
+    val barra: String = "------------------"
+    
+    val funcionarios = listOf(joao, pedro, maria)
+  
+    funcionarios.forEach{ println(it)}
+    
+   	println(barra)
+        
+    funcionarios
+        .groupBy { it.tipoDeContratacao == "CLT" }  // Agrupar sob a condição de Contratação "CLT"
+        .forEach { println(it) } 
+
+}
+
+data class Funcionarios (
+	val nome: String,
+	val salario: Int,
+    val tipoDeContratacao: String
+) {
+    override fun toString():String = """
+    Nome: $nome
+    Salário: R$ $salario
+    Tipo de Contratação: $tipoDeContratacao
+    
+    """.trimIndent()
+}
+```
+### - **setOf**
+1. Usado para criar conjuntos diferentes para objetos com características específicas;
+2. É diferente do `listOf()` onde colocamos todos os objetos juntos;
+
+>Exemplo básico com o uso do comando `x.union(y)`: usado para unir dois conjuntos diferentes
+
+```
+fun main() {
+    val joao = Funcionarios(nome = "João", salario = 1500, tipoDeContratacao = "CLT")
+    val pedro = Funcionarios(nome = "Pedro", salario = 5000, tipoDeContratacao = "CLT")
+    val maria = Funcionarios(nome = "Maria", salario = 3500, tipoDeContratacao = "PJ")
+
+    val barra: String = "------------------"
+    
+    val funcionariosCLT = setOf(joao, pedro)
+    val funcionariosPJ = setOf(maria)
+  
+    val resultUnion = funcionariosCLT.union(funcionariosPJ)
+    
+    resultUnion.forEach{ println(it) }    
+          
+}
+
+data class Funcionarios (
+	val nome: String,
+	val salario: Int,
+    val tipoDeContratacao: String
+) {
+    override fun toString():String = """
+    Nome: $nome
+    Salário: R$ $salario
+    Tipo de Contratação: $tipoDeContratacao
+    
+    """.trimIndent()
+}
+```
+>Exeplo usando a operação `x.minus(y)`: usado para subtrair um conjunto X de outro Y
+
+```
+fun main() {
+    val joao = Funcionarios(nome = "João", salario = 1500, tipoDeContratacao = "CLT")
+    val pedro = Funcionarios(nome = "Pedro", salario = 5000, tipoDeContratacao = "CLT")
+    val maria = Funcionarios(nome = "Maria", salario = 3500, tipoDeContratacao = "PJ")
+
+    val barra: String = "------------------"
+    
+    val funcionariosCLT = setOf(joao, pedro)
+    val funcionariosPJ = setOf(maria)
+  
+    val resultUnion = funcionariosCLT.union(funcionariosPJ) //.Union é usado para unir dois conjuntos diferentes
+    
+    resultUnion.forEach{ println(it) }  
+    
+    println(barra)
+    val funcionariosTodos = setOf(joao, pedro, maria)
+    val resultSubtract = funcionariosTodos.minus(funcionariosPJ)
+    
+    resultSubtract.forEach{ println(it) } 
+    
+          
+}
+
+data class Funcionarios (
+	val nome: String,
+	val salario: Int,
+    val tipoDeContratacao: String
+) {
+    override fun toString():String = """
+    Nome: $nome
+    Salário: R$ $salario
+    Tipo de Contratação: $tipoDeContratacao
+    
+    """.trimIndent()
+}
+```
+>Exemplo usando o comando `x.intersect(y)` : usado para encontrar valores em comum nos conjuntos X e Y
+
+```
+fun main() {
+    val joao = Funcionarios(nome = "João", salario = 1500, tipoDeContratacao = "CLT")
+    val pedro = Funcionarios(nome = "Pedro", salario = 5000, tipoDeContratacao = "CLT")
+    val maria = Funcionarios(nome = "Maria", salario = 3500, tipoDeContratacao = "PJ")
+
+    val barra: String = "------------------"
+    
+    val funcionariosCLT = setOf(joao, pedro)
+    val funcionariosPJ = setOf(maria)
+  
+    val resultUnion = funcionariosCLT.union(funcionariosPJ) //.Union é usado para unir dois conjuntos diferentes
+    
+    resultUnion.forEach{ println(it) }  
+    
+    println(barra)
+    val funcionariosTodos = setOf(joao, pedro, maria)
+    val resultIntersect = funcionariosTodos.intersect(funcionariosPJ)
+    
+    resultIntersect.forEach{ println(it) } 
+    
+          
+}
+
+data class Funcionarios (
+	val nome: String,
+	val salario: Int,
+    val tipoDeContratacao: String
+) {
+    override fun toString():String = """
+    Nome: $nome
+    Salário: R$ $salario
+    Tipo de Contratação: $tipoDeContratacao
+    
+    """.trimIndent()
+}
+```
+### - **mapOf**
+1. Um mapa é uma coleção de **chaves** e **valores**;
+
+```
+fun main() {
+    //Primeira maneira de criar um mapa
+    val pair: Pair<String, Double> = Pair("João", 1000.0)
+    val map1= mapOf(pair)
+    
+    map1.forEach {(k,v) -> println ("Chave: $k - Valor: $v")}
+    
+    println("------------------------------------")
+    //Segunda maneira de criar um mapa
+    val map2 = mapOf(
+        "Pedro" to 2500.0,
+    	"Maria" to 3000.0)
+    
+    map2.forEach {(k,v) -> println ("Chave: $k - Valor: $v")}
+
+}
+
+```
+
+
+## - **Operação ou Método Coletor**
+1. Usado para executar **operações** nas collections;
+2. Podemos usar `forEach`, `toMap`, `toList` ou `toSet` 
+
+
 
 ---
 ---
