@@ -2,7 +2,7 @@
 
 ### **MENU DE CONTEÚDOS**
 - [**CONCEITOS SOBRE COLEÇÕES**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--conceitos-sobre-cole%C3%A7%C3%B5es)<br> 
-    -> [**COMO CRIAR UMA COLEÇÃO**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--como-criar-cole%C3%A7%C3%B5es)
+    -> [**Como Criar uma Coleção**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--como-criar-cole%C3%A7%C3%B5es)
 - [**ARRAY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array)<br> 
     -> [**intArrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--intarrayof)<br>
     -> [**Array de String**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array-de-string)<br>
