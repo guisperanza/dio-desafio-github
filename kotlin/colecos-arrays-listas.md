@@ -4,10 +4,15 @@
 - [**CONCEITOS SOBRE COLEÇÕES**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--conceitos-sobre-cole%C3%A7%C3%B5es)<br> 
     -> [**Como Criar uma Coleção**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--como-criar-cole%C3%A7%C3%B5es)
 - [**ARRAY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array)<br> 
-    -> [**intArrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--intarrayof)<br>
-    -> [**Array de String**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array-de-string)<br>
-    -> [**DoubleArray**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--double-array)<br>
-- [**OPERAÇÕES COM ARRAY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--opera%C3%A7%C3%B5es-com-array)
+    -> [**IntArray/intArrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--intarrayof)<br>
+    -> [**Array/arrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--array-de-string)<br>
+    -> [**DoubleArray/doubleArrayOf**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--double-array)<br>
+- [**OPERAÇÕES COM ARRAY**](https://github.com/guisperanza/dio-desafio-github/blob/main/kotlin/colecos-arrays-listas.md#--opera%C3%A7%C3%B5es-com-array)<br>
+    -> [**SORT**]()<br>
+    -> [**MAX, MIN e AVERAGE**]()<br>
+    -> [**AVERAGE**]()<br>
+    -> [**ARRAY COUNT, FIND e ANY**]()<br>
+- [**PRÓXIMO TÓPICO**]()
 
 ---
 ## - **CONCEITOS SOBRE COLEÇÕES**
@@ -103,13 +108,13 @@ fun main() {
 > Exeplo com **MAIS** linhas de código
 ```
 fun main() {
-    val nomes = Array<String>(3){""}
+    val nomes = Array(3){""}
        nomes[0] = "Maria"
        nomes[1] = "Felipe"
        nomes[2] = "José" 
     
     nomes.sort()
-    nomes.forEach {println(nomes)}
+    nomes.forEach {println(it)}
 }
 ```
 
@@ -123,14 +128,36 @@ fun main() {
 ```
 1. Usamos o `arrayOf` e o `intArrayOf` com o objetivo de economizar linhas de código. 
 
-### - **Double Array**
+### - **Double Array e doubleArrayOf**
+```
+fun main() {
+    val salarios = DoubleArray(3)
+    salarios[0] = 1000.0
+    salarios[1] = 5000.0
+    salarios[2] = 500.0  
+   
+    salarios.sort()
+    salarios.forEach{ println(it) }
+    }
+```
+
+> Usando o `doubleArrayOf`
+
+```
+fun main() {
+    val salarios = doubleArrayOf(1000.0, 3000.0, 500.0)
+  
+    salarios.sort()
+    salarios.forEach{ println(it) }
+}
+```
 
 
 <BR> 
 
 ## - **OPERAÇÕES COM ARRAY**
 
-### - **".SORT()"**
+### - **.SORT()**
 Podemos utilizar o comando `.sort()` para colocar a array com os seus valores em forma crescente
 
 - Exemplo:
@@ -149,6 +176,61 @@ fun main() {
         println(valor)
     }
     
+}
+```
+
+### - **MAX, MIN e AVERAGE**
+``` 
+fun main() {
+    val barra:String = "------------------"
+    val salarios = doubleArrayOf(1000.0, 3000.0, 500.0)
+  
+    for (salario in salarios){
+        println(salario)
+    }
+    
+    println(barra)
+    
+    println("O maior salário é: R$ ${salarios.max()}") //Retorna o maior valor da array
+    println("O menor salário é: R$ ${salarios.min()}") //Retorna o menor valor da array
+    println("A média salarial é: R$ ${salarios.average()}") //Retorna a média dos valores da array    
+  
+}
+```
+### - **FILTER**
+```
+fun main() {
+    val barra:String = "------------------"
+    val salarios = doubleArrayOf(1000.0, 3000.0, 500.0)
+  
+    for (salario in salarios){
+        println("Salário: R$ $salario")
+    }
+     
+    val salariosMaiorQue2500 =  salarios.filter { it > 2500 } //Usamos IT e não SALARIOS nesse caso porque estamos utilizando a iteração por meio do FOR/FOREACH
+    println(barra)
+    salariosMaiorQue2500.forEach { println("Os salários maiores que R$ 2.500 são: R$ $it")}
+  
+}
+```
+### - **ARRAY COUNT, FIND e ANY**
+```
+fun main() {
+    val barra:String = "-------------"
+    val salarios = doubleArrayOf(1000.0, 3000.0, 500.0)
+  
+    for (salario in salarios){
+        println("Salário: R$ $salario")
+    }
+    println(barra)
+    println(salarios.count { it in 2000.0..5000.0}) //Retorna a quantidade de valores entre 2.000 e 5.0000
+        println(barra)
+
+    println(salarios.find { it == 3000.0}) //Busca e Retorna o valor 3000.0 caso ele seja um valor na array
+        println(barra)
+
+    println(salarios.any { it >= 3000.0}) //Retorna um valor booleano para a expressão
+
 }
 ```
 
